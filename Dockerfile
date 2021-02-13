@@ -14,4 +14,4 @@ COPY --from=builder /data/awtrix.jar awtrix.jar
 
 # Set runtime
 EXPOSE 7000 7001
-CMD ["java", "awtrix.jar"]
+CMD ["java", "-jar", "awtrix.jar"]

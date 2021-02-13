@@ -14,7 +14,6 @@ RUN echo "Building for ARCH $TARGETPLATFORM"
 WORKDIR /data
 RUN curl -O https://blueforcer.de/awtrix/stable/awtrix.jar
 
+# Set runtime
 EXPOSE 7000 7001
-
-# Set command
 CMD ["java", "awtrix.jar"]

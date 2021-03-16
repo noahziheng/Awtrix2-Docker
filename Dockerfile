@@ -6,6 +6,7 @@ RUN curl -O https://blueforcer.de/awtrix/stable/awtrix.jar
 
 FROM adoptopenjdk/openjdk8:debianslim-jre
 
+WORKDIR /data
 # Output target platform
 ARG TARGETPLATFORM
 RUN echo "Building for ARCH $TARGETPLATFORM"
